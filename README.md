@@ -1,13 +1,12 @@
-# MPI example
+# POSIX Threads example
 
 ## Task
 
-integrate f(x) on [a;b] using MPI
+integrate f(x) on [a;b] using POSIX Threads
 
 ## Requirements
 
-* MPI-сompatible C compiler
-* Any MPI toolkit (MPICH for example)
+* Installed pthread library
 
 ## Build
 
@@ -17,7 +16,4 @@ integrate f(x) on [a;b] using MPI
 
 ## Run
 
-Choose one of:
-
-* run `make mpirun`
-* run `mpirun -np k+1 ./mpi_example` where k = cores count
+* run `pthread_example` from `build` dir
