@@ -1,12 +1,13 @@
-# POSIX Threads example
+# C++11 Threads example
 
 ## Task
 
-integrate f(x) on [a;b] using POSIX Threads
+integrate f(x) on [a;b] using C++11 Threads
 
 ## Requirements
 
-* Installed pthread library
+* Installed C++11 compiler
+* pthread library
 
 ## Build
 
@@ -16,4 +17,4 @@ integrate f(x) on [a;b] using POSIX Threads
 
 ## Run
 
-* run `pthread_example` from `build` dir
+* run `cpp11thread_example` from `build` dir

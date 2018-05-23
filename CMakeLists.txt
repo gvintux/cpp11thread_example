@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
-project(pthread_example)
+project(cpp11thread_example)
 set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES main.cpp)
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} pthread)
+target_compile_options(${PROJECT_NAME} PRIVATE "-O0")

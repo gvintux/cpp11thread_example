@@ -30,13 +30,12 @@ static void integate(void *args)
         double x = params->a + i * params->h;
         params->result += params->h * params->f(x);
     }
-//    cout << "Hi " << params->bstep << endl << params->bstep  << endl;
 }
 
 int main(int argc, char *argv[])
 {
     const unsigned int thread_count = thread::hardware_concurrency();
-    const unsigned long long steps = 100000000;
+    const unsigned long long steps = 1000000000;
     double a = 0;
     double b = 1;
     double h = (b - a) / (steps * 1.0);
@@ -65,4 +64,3 @@ int main(int argc, char *argv[])
     cout << fixed << setprecision(DBL_DIG) << double(end - begin) / (1.0 * CLOCKS_PER_SEC) << " seconds." << endl;
     return 0;
 }
-
